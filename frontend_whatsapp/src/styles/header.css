@@ -1,0 +1,79 @@
+.header {
+  width: 100%;
+  height: 90px;
+  /* background-color: gray; */
+  background: #20262d;
+  color: #cfd6de;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: x-large;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.dark {
+  width: 100%;
+  height: 90px;
+  /* background-color: gray; */
+  background: #075e54;
+  color: black;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  font-size: x-large;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.righticons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lefticons {
+  display: flex;
+  /* width: 150px; */
+  align-items: center;
+  margin-right: 0;
+  padding-right: 5px;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 700;
+}
+
+.icons:hover {
+  color: rgb(19, 122, 19);
+}
+
+.name {
+  padding-top: 7px;
+  margin-left: 10px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
+
+#status {
+  color: rgb(34, 225, 37);
+  font-weight: bold;
+  font-size: 63%;
+  margin: 0px 5px;
+  padding: 0px;
+}
+
+#groupName {
+  margin: 0px 3px;
+  padding: opx;
+}
+
+#as {
+  display: flex;
+  font-size: small;
+}
+
+#user {
+  font-size: large;
+  margin: 0px 7px;
+}

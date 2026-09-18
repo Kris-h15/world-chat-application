@@ -66,6 +66,7 @@
 #groupName {
   margin: 0px 3px;
   padding: opx;
+  font-size: max(95%, 15px);
 }
 
 #as {

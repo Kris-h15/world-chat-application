@@ -19,8 +19,9 @@ app.use(express.json());
 
 const io = new Server(server, {
   cors: {
-    origin: "https://world-chat-app.netlify.app",
+    origin: ["https://world-chat-app.netlify.app", "http://localhost:5173"],
     methods: ["GET", "POST"],
+    credentials: true,
   },
 });
 

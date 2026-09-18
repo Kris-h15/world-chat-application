@@ -8,6 +8,7 @@ const server = http.createServer(app);
 const io = new Server(server, { cors: { origin: "*" } });
 
 const port = 3000;
+const port1 = "https://world-chat-application-git-main-aman-0f6d.vercel.app/";
 const ROOM = "group";
 
 app.use(express.static(path.join(__dirname, "public")));
@@ -49,6 +50,6 @@ io.on("connection", (socket) => {
 });
 
 // -----------------------------------------------------------
-server.listen(port, () => {
+server.listen(port1, () => {
   console.log(`Server running on port ${port}`);
 });

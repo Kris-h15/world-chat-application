@@ -11,16 +11,15 @@ const server = http.createServer(app);
 app.use(
   cors({
     origin: "https://world-chat-app.netlify.app",
-    methods: ["GET", "POST"],
-    credentials: true,
   }),
 );
+
+app.use(express.json());
 
 const io = new Server(server, {
   cors: {
     origin: "https://world-chat-app.netlify.app",
     methods: ["GET", "POST"],
-    credentials: true,
   },
 });
 
@@ -30,9 +29,9 @@ const ROOM = "group";
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.get("/", (req, res) => {
-  res.send("done");
-});
+// app.get("/", (req, res) => {
+//   res.send("done");
+// });
 
 // socket.io connection handler ------------------------------
 io.on("connection", (socket) => {
@@ -67,6 +66,6 @@ io.on("connection", (socket) => {
 });
 
 // -----------------------------------------------------------
-server.listen(port1, () => {
+server.listen(port1, "0.0.0.0", () => {
   console.log(`Server running on port ${port}`);
 });

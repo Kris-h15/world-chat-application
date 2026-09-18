@@ -3,9 +3,17 @@ const app = express();
 const { Server } = require("socket.io");
 const http = require("http");
 const path = require("path");
+const cors = require("cors");
 
 const server = http.createServer(app);
-const io = new Server(server, { cors: { origin: "*" } });
+// const io = new Server(server, { cors: { origin: "*" } });
+const io = new Server(server, {
+  cors: {
+    origin: "https://world-chat-app.netlify.app",
+    methods: ["GET", "POST"],
+    credentials: true,
+  },
+});
 
 const port = 3000;
 const port1 = "https://world-chat-application-git-main-aman-0f6d.vercel.app/";

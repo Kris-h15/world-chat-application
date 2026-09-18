@@ -7,6 +7,15 @@ const cors = require("cors");
 
 const server = http.createServer(app);
 // const io = new Server(server, { cors: { origin: "*" } });
+
+app.use(
+  cors({
+    origin: "https://world-chat-app.netlify.app",
+    methods: ["GET", "POST"],
+    credentials: true,
+  }),
+);
+
 const io = new Server(server, {
   cors: {
     origin: "https://world-chat-app.netlify.app",

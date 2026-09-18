@@ -17,6 +17,11 @@
   color: #f1f5f9;
   /* position: fixed; */
   /* bottom: 0; */
+  /* newly added */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .darkinput {
@@ -30,6 +35,11 @@
   background: white;
   border: 1px solid #2a3038;
   color: black;
+  /* newly added */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
 }
 
 #sendbtn {

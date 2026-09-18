@@ -12,6 +12,10 @@ const ROOM = "group";
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.get("/", (req, res) => {
+  res.send("done");
+});
+
 // socket.io connection handler ------------------------------
 io.on("connection", (socket) => {
   console.log("user connected", socket.id);

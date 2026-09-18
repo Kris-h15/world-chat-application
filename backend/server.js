@@ -23,8 +23,8 @@ const io = new Server(server, {
   },
 });
 
-const port = 3000;
-const port1 = "https://world-chat-application-git-main-aman-0f6d.vercel.app/";
+const port = process.env.PORT || 3000;
+// const port1 = "https://world-chat-application-git-main-aman-0f6d.vercel.app/";
 const ROOM = "group";
 
 app.use(express.static(path.join(__dirname, "public")));

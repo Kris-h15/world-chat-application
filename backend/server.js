@@ -10,7 +10,8 @@ const server = http.createServer(app);
 
 app.use(
   cors({
-    origin: "https://world-chat-app.netlify.app",
+    origin: ["https://world-chat-app.netlify.app", "http://localhost:5173"],
+    credentials: true,
   }),
 );
 

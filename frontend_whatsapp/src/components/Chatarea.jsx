@@ -25,7 +25,7 @@ export default function Chatarea({ data, username, newuser, darkMode }) {
                 <DoneAllIcon />
               </span>
             )}
-            <li>{x.text}</li>
+            <li id="text">{x.text}</li>
             <li id="time">
               {new Date(x.time).toLocaleTimeString([], {
                 hour: "2-digit",

@@ -19,10 +19,14 @@
   background-size: contain;
 }
 
+#text {
+  font-size: 96%;
+}
+
 .msg {
-  min-width: 150px;
+  min-width: 190px;
   width: 23%;
-  min-width: 20%;
+  /* min-width: 20%; */
   height: 45px;
   min-height: 40px;
   display: flex;
@@ -117,4 +121,5 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3px 11px;
 }

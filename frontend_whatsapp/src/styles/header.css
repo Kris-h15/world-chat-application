@@ -1,6 +1,6 @@
 .header {
   width: 100%;
-  height: 90px;
+  height: 70px;
   /* background-color: gray; */
   background: #20262d;
   color: #cfd6de;
@@ -10,6 +10,11 @@
   font-size: x-large;
   justify-content: space-between;
   box-sizing: border-box;
+  /* Newly added */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 .dark {
   width: 100%;
@@ -24,6 +29,10 @@
   justify-content: space-between;
   box-sizing: border-box;
   /* Newly added */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 .righticons {

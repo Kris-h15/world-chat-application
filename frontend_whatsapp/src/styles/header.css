@@ -10,7 +10,6 @@
   font-size: x-large;
   justify-content: space-between;
   box-sizing: border-box;
-  z-index: 10;
 }
 .dark {
   width: 100%;
@@ -25,9 +24,6 @@
   justify-content: space-between;
   box-sizing: border-box;
   /* Newly added */
-  position: fixed;
-  top: 0;
-  z-index: 10;
 }
 
 .righticons {

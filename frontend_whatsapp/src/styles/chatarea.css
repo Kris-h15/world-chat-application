@@ -120,8 +120,9 @@
   color: whitesmoke;
   background-color: green;
   width: 21%;
-  min-width: 160px;
-  height: 5%;
+  min-width: 220px;
+  /* min-width: 160px; */
+  height: 6%;
   /* text-align: center; */
   border-radius: 8px;
   margin: 3px auto;

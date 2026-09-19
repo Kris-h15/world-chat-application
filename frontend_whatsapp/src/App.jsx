@@ -15,11 +15,6 @@ function App() {
 
   let [data, setdata] = useState([
     { text: "Hello !", sender: "KRISH", time: 1237657400000, id: uuidv4() },
-    { text: "Hello !", sender: "KRISH", time: 1237657400000, id: uuidv4() },
-    { text: "Hello !", sender: "KRISH", time: 1237657400000, id: uuidv4() },
-    { text: "Hello !", sender: "KRISH", time: 1237657400000, id: uuidv4() },
-    { text: "Hello !", sender: "KRISH", time: 1237657400000, id: uuidv4() },
-    { text: "Hello !", sender: "KRISH", time: 1237657400000, id: uuidv4() },
     {
       text: "how are you ",
       sender: "ROHAN",

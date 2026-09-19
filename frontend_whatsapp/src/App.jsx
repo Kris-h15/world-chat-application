@@ -16,12 +16,12 @@ function App() {
   let [data, setdata] = useState([
     { text: "Hello !", sender: "KRISH", time: 1237657400000, id: uuidv4() },
     {
-      text: "how are you ",
+      text: "how are you ?",
       sender: "ROHAN",
       time: 1787657400000,
       id: uuidv4(),
     },
-    { text: "Fine ", sender: "DIVYA", time: 1787657587000, id: uuidv4() },
+    { text: "Fine 😅", sender: "DIVYA", time: 1787657587000, id: uuidv4() },
   ]);
   let [input, setinput] = useState("");
   let [username, setusername] = useState("");
